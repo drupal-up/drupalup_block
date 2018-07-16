@@ -19,12 +19,12 @@ class DrupalupBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#markup' => $this->getRandQuote(),
       '#cache' => [
         'max-age' => 0
       ],
-    );
+    ];
   }
 
   /**
